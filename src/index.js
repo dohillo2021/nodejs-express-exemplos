@@ -1,13 +1,10 @@
 import * as express from 'express'
-const { listen } = require('express/lib/application')
-const res = require('express/lib/response')
-
 
 const app = express()
 
-import userController from './controller/userController'
+import userController from './modules/user/userController'
 
-import postController from './controller/postController'
+import postController from './modules/post/postController'
 
 
 app.use('/user', userController)
