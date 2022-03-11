@@ -1,6 +1,7 @@
 import * as express from 'express'
 
 const app = express()
+app.use(express.json())
 
 import userController from './modules/user/userController'
 

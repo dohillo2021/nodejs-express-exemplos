@@ -4,7 +4,7 @@ import { signup } from './userService'
 
 const router = Router()
 router.post('/signup', (req, res) => {
-  const answer = signup()
+  const answer = signup(req.body)
   res.send(answer)
 })
 
