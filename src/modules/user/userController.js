@@ -1,6 +1,5 @@
 import {Router} from 'express'
 
-<<<<<<< HEAD
 import { signup } from './userService'
 
 const router = Router()
@@ -15,7 +14,7 @@ router.post('/login', (req, res) => {
 
 
 export default router
-=======
+
 import { signup, login } from './userService'
 
 const AUTH_COOKIE_NAME = 'authorization'
@@ -47,4 +46,4 @@ router.post('/login', (req, res) => {
 
 export default router
 
->>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
+
