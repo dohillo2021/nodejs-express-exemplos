@@ -12,7 +12,7 @@ router.post('/signup', (req, res) => {
   } catch (err) {
     if (err.message === 'email_existente')
       return res.status(400).send(err.message)
-      
+
     res.status(500).send(err.message)
   }
 })
@@ -22,7 +22,7 @@ router.post('/login', (req, res) => {
     const token = login(req.body)
     res.cookie(AUTH_COOKIE_NAME, token).status(200).send( )
   }catch (err) {
-    if(err.message === 'email_mao_encontrado' || err.message === 'senha_incorreta')
+    if(err.message === 'email_nao_encontrado' || err.message === 'senha_incorreta')
     return res.status(400).send(err.message)
 
     res.status(500).send( )
