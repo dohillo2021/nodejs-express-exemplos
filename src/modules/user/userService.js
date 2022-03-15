@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-
 export const signup = (data) => {
   console.log(data)
   return false
 }
-=======
 import { sign } from 'jsonwebtoken'
 
 
@@ -32,4 +29,4 @@ export const login = (data) => {
     return generateAccessToken({ email: data.email })
 }
     
->>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
+
