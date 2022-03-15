@@ -1,5 +1,6 @@
 import {Router} from 'express'
 
+<<<<<<< HEAD
 import { signup } from './userService'
 
 const router = Router()
@@ -14,3 +15,36 @@ router.post('/login', (req, res) => {
 
 
 export default router
+=======
+import { signup, login } from './userService'
+
+const AUTH_COOKIE_NAME = 'authorization'
+
+const router = Router()
+router.post('/signup', (req, res) => {
+  try {
+    const token = signup(req.body)
+    res.cookie(AUTH_COOKIE_NAME, token).status(201).send( )
+  } catch (err) {
+    if (err.message === 'email_existente')
+      return res.status(400).send(err.message)
+    res.status(500).send(err.message)
+  }
+})
+
+router.post('/login', (req, res) => {
+  try {
+    const token = login(req.body)
+    res.cookie(AUTH_COOKIE_NAME, token).status(200).send( )
+  }catch (err) {
+    if(err.message === 'email_mao_encontrado' || err.message === 'senha_incorreta')
+    return res.status(400).send(err.message)
+
+    res.status(500).send( )
+  }
+})
+
+
+export default router
+
+>>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
