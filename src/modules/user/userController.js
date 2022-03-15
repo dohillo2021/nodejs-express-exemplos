@@ -12,6 +12,7 @@ router.post('/signup', (req, res) => {
   } catch (err) {
     if (err.message === 'email_existente')
       return res.status(400).send(err.message)
+      
     res.status(500).send(err.message)
   }
 })
