@@ -2,19 +2,10 @@ import * as express from 'express'
 
 const app = express()
 
-import userController from './controller/userController'
+import userController from './modules/user/userController'
 
-import postController from  './controller/postController'
+import postController from  './modules/post/postController'
 
-/**
- *USUARIOS:
- *Cadastro
- *login
- *
- * POSTS
- * Criar posts
- * Listar posts
- */
 
 app.use('/user', userController)
 app.use('/post', postController)
