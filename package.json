@@ -1,10 +1,6 @@
 {
   "name": "nodejs-express-exemplos",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "",
-=======
->>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
   "main": "index.js",
   "scripts": {
     "dev": "webpack --watch"
@@ -15,22 +11,14 @@
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "express": "^4.17.2",
-<<<<<<< HEAD
-    "jsonwebtoken": "^8.5.1",
-    "util": "^0.12.4"
-=======
     "jsonwebtoken": "^8.5.1"
->>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
   },
   "devDependencies": {
     "nodemon-webpack-plugin": "^4.7.0",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-node-externals": "^3.0.0"
-<<<<<<< HEAD
-  }
-=======
   },
   "description": ""
->>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
 }
+
