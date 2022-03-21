@@ -12,7 +12,9 @@ export const verifyAccessToken = ( req, res, next) => {
       const user  = verify(authorization, AUTH_SECRET)
       req.user = user
       next()
+
     } catch (err) {
       res.status(401).send()
+
     }
 }

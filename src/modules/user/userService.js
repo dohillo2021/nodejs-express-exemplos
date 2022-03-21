@@ -1,7 +1,8 @@
 import { generateAccessToken } from '../../utils/auth'
 
-
 let users = [ ]
+
+const generateAccessToken = (data) => sign(data, 'secret')
 
 const getUserByEmail = (searchEmail) => 
 users.find((obj) => obj.email === searchEmail)
