@@ -7,7 +7,7 @@ const router = Router()
 
 router.post('/ ', verifyAccessToken, (req, res) => {
   try {
-    createPost(req.body, req.usert)
+    createPost(req.body, req.user)
   } catch (err) {
     res.status(500).send(err.message)
   }
