@@ -10,6 +10,7 @@
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1"
   },
+
   "name": "nodejs-express-exemplos",
   "version": "1.0.0",
   "main": "index.js",
