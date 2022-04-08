@@ -1,8 +1,7 @@
 let posts = []
 
 export const createPost = (data, user) => {
-    
-    const post ={
+        const post ={
         createdBy: user.email,
         ...data
     }
