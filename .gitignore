@@ -1,7 +1,5 @@
 node_modules
 dist
-<<<<<<< HEAD
+
 .webpack
-=======
-.webpack
->>>>>>> 9dd8634b02e9b3a6b8aab0d7a7589e6d62c2b2b2
+
