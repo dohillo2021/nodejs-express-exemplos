@@ -6,7 +6,7 @@ import { createPost } from './postService'
 
 const router = Router()
 
-router.post('/ ', verifyAccessToken, (req, res) => {
+router.post('/', verifyAccessToken, (req, res) => {
   try {
     createPost(req.body, req.user)
   } catch (err) {
