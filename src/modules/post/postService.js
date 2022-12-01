@@ -19,3 +19,5 @@ export const getPosts = (id) => {
        }
     return posts
 }
+
+//finalziado projeto rotas ok criando e listando POSTS
