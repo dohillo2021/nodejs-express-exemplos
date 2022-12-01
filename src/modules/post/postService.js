@@ -10,7 +10,9 @@ export const createPost = (data, user) => {
 }
 
 export const getPosts = (id) => {
-    if(id) {//regra procurar pelo post
+
+    if(id) {
+
         const post = posts[id]
         if (!post) throw new Error('post_nao_existe')
         return post

@@ -17,7 +17,9 @@ router.post('/', verifyAccessToken, (req, res) => {
 
 router.get('/:id?', verifyAccessToken, (req, res) => {
     try {
+
       const posts = getPosts(req.params.id)//pegamos o id no params se ela existir a variavel se nao vai dar undefined
+
       res.status(200).send(posts)
     } catch (err) {
       if (err.message === 'post_nao_existe')
@@ -27,6 +29,7 @@ router.get('/:id?', verifyAccessToken, (req, res) => {
     }  
   })
   
+
 export default router
 
 //FINALIZADO PROJETO
